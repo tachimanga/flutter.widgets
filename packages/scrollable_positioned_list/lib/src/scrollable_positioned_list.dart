@@ -293,6 +293,8 @@ class ScrollOffsetController {
     );
   }
 
+  ScrollController get controller =>  _scrollableListState!.primary.scrollController;
+
   _ScrollablePositionedListState? _scrollableListState;
 
   void _attach(_ScrollablePositionedListState scrollableListState) {
